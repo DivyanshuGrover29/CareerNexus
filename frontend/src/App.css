@@ -242,18 +242,40 @@
   border-radius: 9999px;
   width: 37%;
   align-items: center;
-  gap:288px;
+  gap:10px;
   margin: auto;
 }
 
-/* Responsive styles */
+.heroinput input {
+  flex: 1; /* Allows input to take up available space */
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 9999px 0 0 9999px; /* Rounded corners on the left */
+}
+
+.heroinput button {
+  padding: 10px 18px;
+  background-color: #6a38c2;
+  color: white;
+  border-radius: 0 9999px 9999px 0; /* Rounded corners on the right */
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles for hero section */
 @media (max-width: 768px) {
   .heroinput {
     width: 80%; /* More width on smaller screens */
+    flex-direction: column; /* Stack input and button vertically */
+    padding: 0;
+    gap: 10px; /* Adjust gap between input and button */
   }
 
   .heroh1 {
     font-size: 30px; /* Decrease font size on smaller screens */
+    line-height:40px;
   }
 
   .herop {

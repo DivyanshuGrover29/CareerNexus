@@ -112,7 +112,7 @@ export const register = async(req,res) => {
         profile: user.profile
     }
     //Ab jo token create kra usko cookies me store krvaya hacking se bchne ke lie bhi
-    return res.status(200).cookie("token" , token , {maxAge: 1*24*60*60*1000, httpsOnly:true , sameSite:'strict'}). json({
+    return res.status(200).cookie("token" , token , {maxAge: 1*24*60*60*1000, httpOnly:true , secure:true,sameSite:'none'}). json({
         message: `Welcome back ${user.fullname}`,
         user,
         success: true

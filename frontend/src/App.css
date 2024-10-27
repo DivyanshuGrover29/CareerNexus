@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-name {
+  background-color: white;
+}
+
+.navb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1280px;
+  height: 64px;
+}
+.logo-name1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo-namespan {
+  color: #f83002;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: medium;
+}
+.list-name {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: medium;
+  margin-right: 20px;
+
+}
+
+.avatarimage {
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.avatarcontent {
+  width: 275px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  flex-direction: column;
+  background-color: white; /* Ensure background color for visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+  z-index: 10; /* Ensure popover stays above other elements */
+}
+
+.popover-avatar {
+  width: 45px; /* smaller size for popover */
+  height: 45px; /* smaller size for popover */
+}
+.avatardetails {
+  font-size: medium;
+}
+
+.buttonpopy {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.buttonpops {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.loginsignupbutton {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Responsive Styles for navbar */
+@media (max-width: 768px) {
+  .navb {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .list-name {
+    flex-direction: column; /* Stack list items vertically */
+    gap: 10px; /* Reduce gap */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .nav-right {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Reduce gap */
+    align-items: flex-start; /* Align items to start */
+  }
+
+  .logo-name1 {
+    font-size: 18px; /* Slightly smaller logo text */
+  }
+
+  .avatarimage {
+    width: 35px; /* Smaller avatar size */
+    height: 35px; /* Smaller avatar size */
+    margin-left: 10px;
+  }
+
+  .avatarcontent {
+    width: 220px; /* Adjust popover width for smaller screens */
+  }
+
+  .loginsignupbutton{
+    flex-direction: column;
+    gap:9px;
+    width: 100%;
+    align-items: center;
+    margin-left: -8px;
+  }
+}
+/*Now styling for signup and login page*/
+
+.mainsignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 1280px;
+}
+.formsetup {
+  width: 50%; /* Equivalent to w-1/2 */
+  border: 1px solid #e5e7eb; /* Equivalent to border and border-gray-200 */
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.signuplogo {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.signupform {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.radio-button{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.profilebutton{
+  display: flex;
+  align-items: center;
+  gap:6px;
+}
+
+.subbutton{
+  width: 100%;
+  margin-top:16px ;
+  margin-bottom: 16px;
+}
+
+/* Add responsiveness for smaller screens for login and signup page */
+@media (max-width: 768px) {
+  .formsetup {
+    width: 90%; /* Full width on smaller screens */
+    padding: 12px;
+  }
+
+  .signuplogo {
+    font-size: large;
+  }
+
+  .signupform label {
+    font-size: 0.875rem; /* Smaller label size */
+  }
+
+  .radio-button {
+    flex-direction: column; /* Stack radio buttons */
+    gap: 8px;
+  }
+}
+
+
+/*Styling for HeroSection*/
+
+.herosection{
+   text-align: center;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+.herointro{
+  padding: 7px 16px;
+  border:1px solid #f3f4f6;
+  color:#f83002;
+  font-size:medium;
+  font-weight: 600;
+  margin: auto;
+  border-radius: 99px;
+  background-color: #e5e7eb;
+}
+
+.heroh1{
+  line-height: 55px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.herop{
+  font-size: 17px;
+  font-style:inherit;
+}
+
+.heroinput{
+  display: flex;
+  border: 1px solid #e5e7eb;
+  padding-left: 12px;
+  border-radius: 9999px;
+  width: 37%;
+  align-items: center;
+  gap:288px;
+  margin: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .heroinput {
+    width: 80%; /* More width on smaller screens */
+  }
+
+  .heroh1 {
+    font-size: 30px; /* Decrease font size on smaller screens */
+  }
+
+  .herop {
+    font-size: 14px; /* Decrease font size on smaller screens */
+  }
+}

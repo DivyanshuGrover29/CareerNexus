@@ -27,8 +27,8 @@ const CategoryCarousel = () => {
 
   return (
     <div className="my-10">
-      <Carousel className="w-full mx-auto my-15 max-w-xl">
-        <CarouselContent>
+      <Carousel className="w-full mx-auto my-15 max-w-xl md:max-w-xl sm:max-w-sm">
+        <CarouselContent className="space-x-4 sm:space-x-2">
           {
             category.map((cat , index) => (
               <CarouselItem className="flex justify-center">
@@ -37,8 +37,8 @@ const CategoryCarousel = () => {
             ))
           }
         </CarouselContent>
-        <CarouselPrevious/>
-        <CarouselNext/>
+        <CarouselPrevious className="absolute left-2 top-1/2 transform -translate-y-1/2 sm:block"/>
+        <CarouselNext className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:block"/>
       </Carousel>
     </div>
   )

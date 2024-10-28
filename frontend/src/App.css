@@ -273,6 +273,12 @@
     gap: 10px; /* Adjust gap between input and button */
   }
 
+  .heroinput input,
+  .heroinput button {
+    width: 100%; /* Full width for input and button */
+    border-radius: 9999px; /* Fully rounded on mobile */
+  }
+  
   .heroh1 {
     font-size: 30px; /* Decrease font size on smaller screens */
     line-height:40px;

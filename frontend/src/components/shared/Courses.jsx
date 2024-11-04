@@ -19,7 +19,7 @@ const Courses = () => {
           Discover a variety of courses to elevate your expertise and career potential.
         </p>
         <a href="https://skillsikho-by-careernexus.vercel.app/" target="_blank" rel="noopener noreferrer">
-          <Button className="px-8 py-3 bg-white text-purple-600 font-semibold rounded-full shadow-md hover:bg-gray-200 transition duration-300 ease-in-out">
+          <Button className="px-8 py-3 bg-white text-[#4a38c2] font-semibold rounded-full shadow-md hover:bg-gray-200 transition duration-300 ease-in-out">
             Explore Courses
           </Button>
         </a>

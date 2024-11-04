@@ -65,5 +65,7 @@
   }
   body {
     @apply bg-background text-foreground;
+     background: linear-gradient(to right, #f9fafb,#eef1f5); /* Soft gradient */
+     color: #333; /* Darker text color for readability */
   }
 }

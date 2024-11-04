@@ -23,7 +23,7 @@ const HeroSection = () => {
     <div className='herosection'>
        <div className='hero'>
         <span className='herointro'>Your Gateway to Career Success</span>
-        <h1 className='heroh1'>Search, Apply & <br/>Get your <span className='text-[#6A38C2]'>Dream Jobs</span></h1>
+        <h1 className='heroh1'>Search, Apply & <br/>Get your <span className='text-[#4a38c2]'>Dream Jobs</span></h1>
         <p className='herop'>Discover the perfect job match and elevate your career with ease.</p>
         <div className='heroinput'>
             <input 

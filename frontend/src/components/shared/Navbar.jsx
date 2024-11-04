@@ -72,6 +72,12 @@ const Navbar = () => {
                 <li>
                   <Link to="/Browse">Browse</Link>
                 </li>
+                {/* Add the Courses link here */}
+                <li>
+                  <a href="https://skillsikho-by-careernexus.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    Courses
+                  </a>
+                </li>
               </>
             )}
           </ul>

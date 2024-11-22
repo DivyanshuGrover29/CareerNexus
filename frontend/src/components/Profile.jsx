@@ -18,6 +18,7 @@ const Profile = () => {
     useGetAppliedJobs();
     //for the resume defined true or false
     const[open , setOpen] = useState(false); 
+      const [feedback, setFeedback] = useState([]);
     const { user } = useSelector(store=>store.auth);
 
   return (

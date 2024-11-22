@@ -76,6 +76,19 @@ const Profile = () => {
                 {/* Applied Job Table   */}
                 <AppliedJobTable />
             </div>
+        {/* Feedback Section */}
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl my-5 p-8 shadow-lg">
+        <h1 className="font-bold text-lg mb-4">Feedback</h1>
+        {feedback.length > 0 ? (
+          feedback.map((item, index) => (
+            <div key={index} className="bg-gray-100 p-4 rounded-lg mb-2 shadow">
+              <p className="text-sm text-gray-700">{item}</p>
+            </div>
+          ))
+        ) : (
+          <p className="text-gray-500">Gain experience in full-stack project development and React.js</p>
+        )}
+      </div>
             <UpdateProfileDialog open={open} setOpen={setOpen}/>
         </div>
   )
